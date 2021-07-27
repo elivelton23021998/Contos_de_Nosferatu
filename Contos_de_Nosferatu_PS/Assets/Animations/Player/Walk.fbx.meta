@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: d7e9576e2f2416947900a9dffea6e4f0
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Walk
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Deniel_Final:Coluna_3' has translation
+      animation that will be discarded.\n\t'Deniel_Final:Ombro_D' has translation
+      animation that will be discarded.\n\t'Deniel_Final:Cot_D' has translation animation
+      that will be discarded.\n\t'Deniel_Final:Pulso_D' has translation animation
+      that will be discarded.\n\t'Deniel_Final:Coxa_E' has translation animation
+      that will be discarded.\n\t'Deniel_Final:Coxa_D' has translation animation
+      that will be discarded.\n\t'Deniel_Final:Pe_D' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 2
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1.92
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Deniel_Final:Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Coxa_E
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Coxa_D
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Joelho_E
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Joelho_D
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Calc_E
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Calc_D
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Coluna_1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Coluna_2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Cabeca_RT
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Cabeca_1
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Crav_E
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Crav_D
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ombro_E
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ombro_D
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Cot_E
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Cot_D
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pulso_E
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pulso_D
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pe_E
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:PontaPe_D
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Cabeca_2
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Olho_R
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Max_S
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pol_E_1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pol_E_2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pol_E_3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ind_E_1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ind_E_2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ind_E_3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Mid_E_1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Mid_E_2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Mid_E_3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Anel_E_1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Anel_E_2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Anel_E_3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Min_E_1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Min_E_2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Min_E_13
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pol_D_1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pol_D_2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Pol_D_3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ind_D_1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ind_D_2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Ind_D_3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Mid_D_1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Mid_D_2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Mid_D_3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Anel_D_1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Anel_D_2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Anel_D_3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Min_D_1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Min_D_2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Min_D_13
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Deniel_Final:Coluna_3
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Walk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Deniel_Final:ZBrush_defualt_group
+      parentName: Walk(Clone)
+      position: {x: -0, y: 16.025871, z: -1.120723}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 23.265182, y: 23.265182, z: 23.265182}
+    - name: Deniel_Final:Root
+      parentName: Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Deniel_Final:Pelvis
+      parentName: Deniel_Final:Root
+      position: {x: -0.0007162826, y: 0.9953474, z: 0.059934948}
+      rotation: {x: 0.47185826, y: -0.5266402, z: -0.47185823, w: 0.5266401}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Deniel_Final:Coluna_1
+      parentName: Deniel_Final:Pelvis
+      position: {x: -0.108983226, y: 0, z: 0}
+      rotation: {x: -0.69843745, y: -0.024041206, z: -0.01849543, w: 0.71502805}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Deniel_Final:Coluna_2
+      parentName: Deniel_Final:Coluna_1
+      position: {x: -0.0868847, y: -0.0049310303, z: 0.00011471042}
+      rotation: {x: -0.7889809, y: 0.025653616, z: -0.026528101, w: 0.61330855}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
+    - name: Deniel_Final:Coluna_3
+      parentName: Deniel_Final:Coluna_2
+      position: {x: -0.078922614, y: 0.011731623, z: -0.029628849}
+      rotation: {x: 0.00000008940697, y: -0.00000006146729, z: 0.0047362857, w: 0.99998885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Deniel_Final:Peito_RT
+      parentName: Deniel_Final:Coluna_3
+      position: {x: -0.12766282, y: 0.03903239, z: -0.009839448}
+      rotation: {x: 0.99135673, y: 0.007998856, z: 0.06912046, w: -0.111222304}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: Deniel_Final:Nuca_RT
+      parentName: Deniel_Final:Peito_RT
+      position: {x: -0.10732154, y: -7.9936054e-17, z: 1.11022296e-17}
+      rotation: {x: 0.000000096857526, y: -0.000000047439233, z: -0.0024972653, w: 0.9999969}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000004}
+    - name: Deniel_Final:Cabeca_RT
+      parentName: Deniel_Final:Nuca_RT
+      position: {x: -0.066232964, y: 3.6415315e-16, z: -8.881784e-18}
+      rotation: {x: -0.00000004610042, y: 0.000000012120624, z: -0.029706936, w: 0.9995587}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Deniel_Final:Cabeca_1
+      parentName: Deniel_Final:Cabeca_RT
+      position: {x: -0.18634306, y: 5.542267e-17, z: 0}
+      rotation: {x: -0.000000094713634, y: 0.00000002383978, z: 0.08570744, w: 0.99632037}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: Deniel_Final:Cabeca_2
+      parentName: Deniel_Final:Cabeca_1
+      position: {x: -0.10293015, y: -7.5381254e-17, z: 0}
+      rotation: {x: -0.43750495, y: 0.55550826, z: 0.437505, w: 0.5555082}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Deniel_Final:Olho_RT
+      parentName: Deniel_Final:Cabeca_1
+      position: {x: 0.011007392, y: 0.083489195, z: 0}
+      rotation: {x: -0.34594917, y: 0.4383344, z: 0.52898484, w: 0.6390284}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Deniel_Final:Olho_L
+      parentName: Deniel_Final:Olho_RT
+      position: {x: -0.03501877, y: -8.786276e-17, z: -1.5024009e-17}
+      rotation: {x: 0.014681483, y: 0.19156617, z: -0.0138731105, w: 0.98127186}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Deniel_Final:Olho_R
+      parentName: Deniel_Final:Olho_RT
+      position: {x: 0.0250653, y: -0.0014013575, z: -0.024414774}
+      rotation: {x: 0.98127186, y: -0.013873246, z: -0.19156602, w: -0.01468147}
+      scale: {x: 0.9999998, y: 1.0000002, z: 1}
+    - name: Deniel_Final:Max_S
+      parentName: Deniel_Final:Cabeca_1
+      position: {x: 0.107754245, y: 0.039122995, z: 0}
+      rotation: {x: -0.421481, y: 0.90683734, z: -0.000000026351229, w: -0.00000006592212}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.9999997}
+    - name: Deniel_Final:Max_I
+      parentName: Deniel_Final:Max_S
+      position: {x: -0.08625286, y: -2.9296612e-16, z: -3.559961e-32}
+      rotation: {x: -0.16260971, y: -0.68815565, z: -0.16260964, w: 0.6881556}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.9999998}
+    - name: Deniel_Final:Crav_E
+      parentName: Deniel_Final:Peito_RT
+      position: {x: -0.03709725, y: -0.025612822, z: 0.061465044}
+      rotation: {x: -0.49373, y: 0.62889737, z: 0.4393442, w: 0.4095064}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: Deniel_Final:Ombro_E
+      parentName: Deniel_Final:Crav_E
+      position: {x: -0.114226274, y: -0.0000000070340422, z: -0.0000000017680837}
+      rotation: {x: -0.013100661, y: -0.13827276, z: -0.04129863, w: 0.9894461}
+      scale: {x: 0.9999997, y: 1, z: 1}
+    - name: Deniel_Final:Cot_E
+      parentName: Deniel_Final:Ombro_E
+      position: {x: -0.29227436, y: -0.0000000056125975, z: 0.000000015579786}
+      rotation: {x: 0.0501998, y: 0.020304933, z: -0.042648975, w: 0.99762154}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Deniel_Final:Pulso_E
+      parentName: Deniel_Final:Cot_E
+      position: {x: -0.24534811, y: 0, z: 3.0198067e-16}
+      rotation: {x: -0.0593393, y: 0.039414678, z: 0.82497543, w: 0.56066114}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Deniel_Final:Ind_E_1
+      parentName: Deniel_Final:Pulso_E
+      position: {x: 0.036794666, y: 0.12530118, z: 0.03873132}
+      rotation: {x: -0.054552387, y: -0.19160928, z: -0.9701579, w: 0.13821538}
+      scale: {x: 1.0000005, y: 1.0000005, z: 0.9999998}
+    - name: Deniel_Final:Ind_E_2
+      parentName: Deniel_Final:Ind_E_1
+      position: {x: -0.009450308, y: -0.0267361, z: 0.016354484}
+      rotation: {x: -0.009911245, y: -0.0037165135, z: -0.1626051, w: 0.98663443}
+      scale: {x: 1, y: 0.9999998, z: 1.0000005}
+    - name: Deniel_Final:Ind_E_3
+      parentName: Deniel_Final:Ind_E_2
+      position: {x: -0.0005145444, y: -0.015540081, z: 0.008010046}
+      rotation: {x: 0.0481877, y: 0.04342995, z: 0.10422245, w: 0.9924362}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.99999994}
+    - name: Deniel_Final:Ind_E_4
+      parentName: Deniel_Final:Ind_E_3
+      position: {x: -0.0044435943, y: -0.020171074, z: 0.014052189}
+      rotation: {x: 0.58343214, y: 0.749524, z: -0.08017021, w: -0.3023137}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Deniel_Final:Min_E_1
+      parentName: Deniel_Final:Pulso_E
+      position: {x: -0.005970566, y: 0.1046696, z: -0.035152305}
+      rotation: {x: -0.2042474, y: 0.13000834, z: -0.9697158, w: 0.03212634}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: Deniel_Final:Min_E_2
+      parentName: Deniel_Final:Min_E_1
+      position: {x: -0.0052803666, y: -0.020494727, z: -0.0050967126}
+      rotation: {x: 0.07152319, y: 0.036900133, z: 0.024843477, w: 0.9964465}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Deniel_Final:Min_E_13
+      parentName: Deniel_Final:Min_E_2
+      position: {x: -0.0036323275, y: -0.01670096, z: -0.0012135069}
+      rotation: {x: 0.03538301, y: 0.027678693, z: 0.034314435, w: 0.998401}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Deniel_Final:Min_E_14
+      parentName: Deniel_Final:Min_E_13
+      position: {x: -0.0053632054, y: -0.026507504, z: -0.000102057136}
+      rotation: {x: -0.49675813, y: -0.44427222, z: -0.23698078, w: 0.70689017}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Deniel_Final:Anel_E_1
+      parentName: Deniel_Final:Pulso_E
+      position: {x: 0.011243698, y: 0.1251233, z: -0.016711809}
+      rotation: {x: -0.1306382, y: -0.062729746, z: -0.9883033, w: 0.047490966}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: Deniel_Final:Anel_E_2
+      parentName: Deniel_Final:Anel_E_1
+      position: {x: -0.0047206157, y: -0.026410863, z: 0.00332856}
+      rotation: {x: -0.055742774, y: -0.015431499, z: 0.046157915, w: 0.9972583}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: Deniel_Final:Anel_E_3
+      parentName: Deniel_Final:Anel_E_2
+      position: {x: -0.0050265267, y: -0.024669904, z: -0.00029631285}
+      rotation: {x: 0.14593382, y: 0.070191085, z: -0.025980068, w: 0.98645914}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1}
+    - name: Deniel_Final:Anel_E_4
+      parentName: Deniel_Final:Anel_E_3
+      position: {x: -0.0031721948, y: -0.017886255, z: 0.0062221936}
+      rotation: {x: 0.8153542, y: 0.17496447, z: 0.40137452, w: 0.378792}
+      scale: {x: 1, y: 0.9999998, z: 0.99999994}
+    - name: Deniel_Final:Mid_E_1
+      parentName: Deniel_Final:Pulso_E
+      position: {x: 0.029139098, y: 0.13145602, z: 0.008595463}
+      rotation: {x: -0.14297041, y: -0.09082144, z: -0.98528767, w: -0.022787316}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: Deniel_Final:Mid_E_2
+      parentName: Deniel_Final:Mid_E_1
+      position: {x: 0.0006972235, y: -0.019191554, z: 0.0050521577}
+      rotation: {x: 0.0736697, y: 0.077972524, z: 0.114133224, w: 0.9876571}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: Deniel_Final:Mid_E_3
+      parentName: Deniel_Final:Mid_E_2
+      position: {x: -0.0052026543, y: -0.029415732, z: 0.01078076}
+      rotation: {x: 0.04300821, y: 0.032147642, z: -0.039511457, w: 0.9977754}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000008}
+    - name: Deniel_Final:Mid_E_4
+      parentName: Deniel_Final:Mid_E_3
+      position: {x: -0.0043397797, y: -0.022523208, z: 0.011935495}
+      rotation: {x: 0.91124356, y: 0.25803167, z: 0.0013256815, w: -0.32101893}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000001}
+    - name: Deniel_Final:Pol_E_1
+      parentName: Deniel_Final:Pulso_E
+      position: {x: 0.0070878123, y: 0.04401759, z: 0.0471376}
+      rotation: {x: 0.25834697, y: -0.31934038, z: -0.9115769, w: 0.017492415}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Deniel_Final:Pol_E_2
+      parentName: Deniel_Final:Pol_E_1
+      position: {x: -0.014347728, y: -0.0060957433, z: 0.026556365}
+      rotation: {x: 0.016946824, y: 0.036395837, z: 0.043120798, w: 0.9982629}
+      scale: {x: 1.0000006, y: 1, z: 1.0000002}
+    - name: Deniel_Final:Pol_E_3
+      parentName: Deniel_Final:Pol_E_2
+      position: {x: -0.01087798, y: -0.001940697, z: 0.019525902}
+      rotation: {x: -0.09356872, y: -0.021377848, z: -0.08272507, w: 0.9919398}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000005}
+    - name: Deniel_Final:Pol_E_4
+      parentName: Deniel_Final:Pol_E_3
+      position: {x: -0.017230788, y: -0.013120762, z: 0.029913303}
+      rotation: {x: 0.7210945, y: 0.1650717, z: 0.25844678, w: 0.6212723}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000005}
+    - name: Deniel_Final:Crav_D
+      parentName: Deniel_Final:Peito_RT
+      position: {x: -0.03709725, y: -0.025612822, z: -0.06146505}
+      rotation: {x: 0.6288975, y: 0.49373007, z: -0.40950635, w: 0.43934405}
+      scale: {x: 1, y: 1.0000008, z: 1.0000007}
+    - name: Deniel_Final:Ombro_D
+      parentName: Deniel_Final:Crav_D
+      position: {x: 0.114768595, y: -0.0011362471, z: 0.0012155612}
+      rotation: {x: -0.013375511, y: -0.13470659, z: -0.040645212, w: 0.98996115}
+      scale: {x: 1.0000004, y: 0.9999998, z: 1.0000002}
+    - name: Deniel_Final:Cot_D
+      parentName: Deniel_Final:Ombro_D
+      position: {x: 0.29222345, y: -0.00036625567, z: 0.0002933442}
+      rotation: {x: 0.050388083, y: 0.02232856, z: -0.044791423, w: 0.9974749}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000002}
+    - name: Deniel_Final:Pulso_D
+      parentName: Deniel_Final:Cot_D
+      position: {x: 0.24528943, y: 0.00073910534, z: 0.00065755844}
+      rotation: {x: 0.05949091, y: -0.039132085, z: -0.8196913, w: -0.5683624}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000004}
+    - name: Deniel_Final:Ind_D_1
+      parentName: Deniel_Final:Pulso_D
+      position: {x: -0.038508907, y: -0.12793343, z: -0.0414485}
+      rotation: {x: 0.06291604, y: 0.16563016, z: 0.9808332, w: -0.08108347}
+      scale: {x: 1.0000004, y: 1.0000011, z: 1.0000004}
+    - name: Deniel_Final:Ind_D_2
+      parentName: Deniel_Final:Ind_D_1
+      position: {x: 0.0049615903, y: 0.027111044, z: -0.012651509}
+      rotation: {x: 0.029832942, y: 0.045357406, z: -0.051769577, w: 0.9971823}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: Deniel_Final:Ind_D_3
+      parentName: Deniel_Final:Ind_D_2
+      position: {x: 0.0031485131, y: 0.015216552, z: -0.00824847}
+      rotation: {x: 0.048714545, y: 0.0028907447, z: 0.040567294, w: 0.9979844}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000008}
+    - name: Deniel_Final:Ind_D_4
+      parentName: Deniel_Final:Ind_D_3
+      position: {x: 0.004439486, y: 0.020176312, z: -0.014053147}
+      rotation: {x: -0.58343196, y: -0.7495242, z: 0.08017035, w: 0.30231354}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Deniel_Final:Min_D_1
+      parentName: Deniel_Final:Pulso_D
+      position: {x: 0.0059677064, y: -0.10466729, z: 0.035152033}
+      rotation: {x: 0.20536011, y: -0.14063369, z: 0.967685, w: -0.040438477}
+      scale: {x: 1.0000001, y: 1.0000006, z: 0.99999994}
+    - name: Deniel_Final:Min_D_2
+      parentName: Deniel_Final:Min_D_1
+      position: {x: 0.005281438, y: 0.020491792, z: 0.0050950567}
+      rotation: {x: 0.071575426, y: 0.03690747, z: 0.024723802, w: 0.9964455}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: Deniel_Final:Min_D_13
+      parentName: Deniel_Final:Min_D_2
+      position: {x: 0.0036288106, y: 0.01670845, z: 0.0012152559}
+      rotation: {x: 0.035383526, y: 0.027673267, z: 0.034472134, w: 0.9983957}
+      scale: {x: 1, y: 1.0000004, z: 1.0000002}
+    - name: Deniel_Final:Min_D_14
+      parentName: Deniel_Final:Min_D_13
+      position: {x: 0.0053631566, y: 0.02650644, z: 0.000101965226}
+      rotation: {x: -0.49675822, y: -0.44427207, z: -0.23698072, w: 0.7068902}
+      scale: {x: 1, y: 1.0000002, z: 1.0000006}
+    - name: Deniel_Final:Anel_D_1
+      parentName: Deniel_Final:Pulso_D
+      position: {x: -0.011246485, y: -0.12512098, z: 0.016711088}
+      rotation: {x: 0.12993266, y: 0.05629278, z: 0.988608, w: -0.051018324}
+      scale: {x: 1.0000004, y: 1.0000013, z: 1.0000002}
+    - name: Deniel_Final:Anel_D_2
+      parentName: Deniel_Final:Anel_D_1
+      position: {x: 0.0047196234, y: 0.026412543, z: -0.00332793}
+      rotation: {x: -0.055724405, y: -0.015435021, z: 0.04617064, w: 0.99725866}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Deniel_Final:Anel_D_3
+      parentName: Deniel_Final:Anel_D_2
+      position: {x: 0.005025982, y: 0.024670443, z: 0.00029599294}
+      rotation: {x: 0.14590463, y: 0.07019816, z: -0.025972553, w: 0.98646307}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: Deniel_Final:Anel_D_4
+      parentName: Deniel_Final:Anel_D_3
+      position: {x: 0.003172321, y: 0.01788591, z: -0.0062215547}
+      rotation: {x: -0.8153542, y: -0.17496449, z: -0.40137467, w: -0.378792}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Deniel_Final:Mid_D_1
+      parentName: Deniel_Final:Pulso_D
+      position: {x: -0.025368784, y: -0.12744752, z: -0.0123446975}
+      rotation: {x: 0.12976475, y: 0.07537947, z: 0.98821485, w: -0.030175917}
+      scale: {x: 1, y: 1.0000002, z: 0.9999997}
+    - name: Deniel_Final:Mid_D_2
+      parentName: Deniel_Final:Mid_D_1
+      position: {x: 0.004136165, y: 0.023413042, z: -0.0032761064}
+      rotation: {x: 0.10491736, y: 0.05043409, z: 0.019317856, w: 0.9930134}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Deniel_Final:Mid_D_3
+      parentName: Deniel_Final:Mid_D_2
+      position: {x: 0.0052014543, y: 0.029416624, z: -0.010780836}
+      rotation: {x: 0.04307726, y: 0.03217218, z: -0.0394265, w: 0.997775}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000005}
+    - name: Deniel_Final:Mid_D_4
+      parentName: Deniel_Final:Mid_D_3
+      position: {x: 0.004344517, y: 0.022517487, z: -0.011933782}
+      rotation: {x: -0.91124356, y: -0.25803193, z: -0.0013257763, w: 0.3210189}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1}
+    - name: Deniel_Final:Pol_D_1
+      parentName: Deniel_Final:Pulso_D
+      position: {x: -0.0070905974, y: -0.04401527, z: -0.04713832}
+      rotation: {x: -0.25886664, y: 0.3126662, z: 0.91376984, w: -0.015896637}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1.0000002}
+    - name: Deniel_Final:Pol_D_2
+      parentName: Deniel_Final:Pol_D_1
+      position: {x: 0.01434925, y: 0.0060940622, z: -0.02655451}
+      rotation: {x: 0.016939836, y: 0.03638182, z: 0.043116998, w: 0.9982637}
+      scale: {x: 1, y: 0.99999994, z: 0.9999998}
+    - name: Deniel_Final:Pol_D_3
+      parentName: Deniel_Final:Pol_D_2
+      position: {x: 0.01087864, y: 0.0019404986, z: -0.01952541}
+      rotation: {x: -0.0935678, y: -0.021411717, z: -0.08273239, w: 0.9919385}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999998}
+    - name: Deniel_Final:Pol_D_4
+      parentName: Deniel_Final:Pol_D_3
+      position: {x: 0.017229322, y: 0.0131216785, z: -0.029913642}
+      rotation: {x: -0.7210945, y: -0.16507155, z: -0.2584468, w: -0.62127244}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000001}
+    - name: Deniel_Final:Coxa_E
+      parentName: Deniel_Final:Pelvis
+      position: {x: -0.013267826, y: -0.056386717, z: 0.079580426}
+      rotation: {x: 0.057599604, y: 0.5110117, z: 0.83362293, w: 0.20154956}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Deniel_Final:Joelho_E
+      parentName: Deniel_Final:Coxa_E
+      position: {x: -0.4128934, y: -0.06402431, z: 0.121979326}
+      rotation: {x: -0.17587833, y: 0.37106234, z: 0.1650301, w: 0.89674115}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Deniel_Final:Calc_E
+      parentName: Deniel_Final:Joelho_E
+      position: {x: -0.37162033, y: 0.20575634, z: -0.3081092}
+      rotation: {x: 0.76494217, y: 0.42594057, z: -0.048546374, w: 0.4807092}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: Deniel_Final:Pe_E
+      parentName: Deniel_Final:Calc_E
+      position: {x: -0.13364957, y: -4.4408918e-17, z: -7.3955705e-33}
+      rotation: {x: 0.034644213, y: 0.0045516337, z: -0.11159177, w: 0.9931396}
+      scale: {x: 0.9999997, y: 0.9999998, z: 0.99999994}
+    - name: Deniel_Final:PontaPe_E
+      parentName: Deniel_Final:Pe_E
+      position: {x: -0.10194606, y: 2.0701168e-17, z: 2.6297858e-18}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Deniel_Final:Coxa_D
+      parentName: Deniel_Final:Pelvis
+      position: {x: -0.0010085184, y: -0.055964097, z: -0.08100695}
+      rotation: {x: -0.35174292, y: 0.04684961, z: -0.019477665, w: -0.93472064}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Deniel_Final:Joelho_D
+      parentName: Deniel_Final:Coxa_D
+      position: {x: 0.43761063, y: -0.08804035, z: -0.0364051}
+      rotation: {x: 0.78982556, y: -0.0032599643, z: -0.047150634, w: -0.6115079}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1}
+    - name: Deniel_Final:Calc_D
+      parentName: Deniel_Final:Joelho_D
+      position: {x: 0.46035427, y: -0.021914834, z: -0.22269931}
+      rotation: {x: -0.17701747, y: -0.49540725, z: 0.22614028, w: 0.8198152}
+      scale: {x: 0.9999998, y: 1, z: 1.0000001}
+    - name: Deniel_Final:Pe_D
+      parentName: Deniel_Final:Calc_D
+      position: {x: 0.13364957, y: -0.000000019772466, z: 0.0000000027631397}
+      rotation: {x: 0.72874427, y: 0.05263807, z: 0.11668591, w: -0.67271507}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000001}
+    - name: Deniel_Final:PontaPe_D
+      parentName: Deniel_Final:Pe_D
+      position: {x: 0.1019464, y: -2.1094237e-17, z: 1.7763568e-17}
+      rotation: {x: 0.000000029802319, y: -0.70710677, z: -0, w: 0.7071068}
+      scale: {x: 1.0000004, y: 1.0000008, z: 1.0000008}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
