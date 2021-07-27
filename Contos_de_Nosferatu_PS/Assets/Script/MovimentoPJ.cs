@@ -102,8 +102,14 @@ public class MovimentoPJ : MonoBehaviour
         {
             cam = Camera.main;
         }
-
+       
+        if (PlayerPrefs.GetString("faseAtual") != null)
+        {
+            PlayerPrefs.SetString("faseAtual", faseAtual);
+        }
         if (PlayerPrefs.GetString("faseAtual") != faseAtual) SceneManager.LoadScene(PlayerPrefs.GetString("faseAtual"));
+
+
 
         if (PlayerPrefs.GetInt("primeiraVez") == 1)
         { 
