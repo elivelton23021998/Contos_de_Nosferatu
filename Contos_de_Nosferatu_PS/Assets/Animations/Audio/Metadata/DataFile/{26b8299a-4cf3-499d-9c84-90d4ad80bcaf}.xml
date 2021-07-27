@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="DataFile" id="{26b8299a-4cf3-499d-9c84-90d4ad80bcaf}">
+		<property name="assetPath">
+			<value>SFX/Object/nature/Wood/Wood_Hit.wav.asd</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{02190a33-87e0-434d-8b91-cf50aba3ed94}</destination>
+		</relationship>
+	</object>
+</objects>
