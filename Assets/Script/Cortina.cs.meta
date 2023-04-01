@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e7e4744a83590ab46963bd3c952aa169
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - roupaMexendo: {fileID: -927199367670048503, guid: 5c3a756b28711f0439c33377f4d11e18, type: 3}
+  - roupaCaindo: {fileID: -927199367670048503, guid: 5c3a756b28711f0439c33377f4d11e18, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
