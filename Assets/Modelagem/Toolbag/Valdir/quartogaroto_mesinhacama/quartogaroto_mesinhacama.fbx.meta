@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: aa1660ea31db4037b57087de97a7ab52
+timeCreated: 1622341946
+ModelImporter:
+  serializedVersion: 18
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  meshes:
+    globalScale: 1
