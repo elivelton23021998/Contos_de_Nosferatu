@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{979ffa22-fa35-4a3e-9d31-325a5d08293c}">
+		<property name="assetPath">
+			<value>SFX/Sound Design/Button/Button_Click.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.15387755102040818</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{02190a33-87e0-434d-8b91-cf50aba3ed94}</destination>
+		</relationship>
+	</object>
+</objects>

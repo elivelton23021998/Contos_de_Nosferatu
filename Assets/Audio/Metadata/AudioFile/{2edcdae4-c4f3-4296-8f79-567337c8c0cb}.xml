@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{2edcdae4-c4f3-4296-8f79-567337c8c0cb}">
+		<property name="assetPath">
+			<value>SFX/Object/nature/Stone/Stone_Roll.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.797437641723356</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{02190a33-87e0-434d-8b91-cf50aba3ed94}</destination>
+		</relationship>
+	</object>
+</objects>
