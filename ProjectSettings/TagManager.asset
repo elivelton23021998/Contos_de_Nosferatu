@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Inimigo
+  - Nosferatu
+  - Spawner
+  - Save
+  - F
+  - E
+  - D
+  - T
+  - ZEscada
+  - End
+  - Legenda
+  - Morcego
+  - Cameras
+  - CC
+  - Next
+  - Quebrar
+  - parede
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Player
+  - Teto
+  - PostProcessing
+  - Not in Reflection
+  - Quebrar
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
