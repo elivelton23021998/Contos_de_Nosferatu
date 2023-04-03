@@ -78,7 +78,7 @@ public class MorcegoPatrulha : MonoBehaviour
             patrulhaIndentificaAtual = 0;
             DefineDestino();
         }
-        else Debug.Log("Sem pontos de patrulha suficiente");
+        //else Debug.Log("Sem pontos de patrulha suficiente");
 
         perseguirJogador = false;
     }
@@ -187,8 +187,6 @@ public class MorcegoPatrulha : MonoBehaviour
             anim.SetBool("EstaStruggle", true);
             anim.SetBool("EstaAndando", false);
             anim.SetBool("EstaCorrendo", false);
-            anim.SetBool("EstaAbaixado", false);
-            anim.SetBool("EstaAndandoAbaixado", false);
         }
 
         else
@@ -235,13 +233,9 @@ public class MorcegoPatrulha : MonoBehaviour
 
     public void EndGame()
     {
-    
-        
-
         StartCoroutine(jog.Morte());
         jog.GetComponent<MovimentoPJ>().ok = true;
         transform.position = reset;
-        //pegouJogador = false;
     }
 
 
@@ -267,34 +261,10 @@ public class MorcegoPatrulha : MonoBehaviour
         colisor.enabled = true;
     }
 
-    /*void IrAteJogador()
-    {
-        navMeshAgent.SetDestination(jogador.transform.position);
-
-        if (this.transform.position == jogador.transform.position)
-        {
-            pegouJogador = true;
-        }
-
-        /*if (pegouJogador)
-        {
-            Transform[] transforms = this.GetComponentsInChildren<Transform>();
-
-            foreach (Transform bat in transforms)
-            {
-                if (bat.gameObject.name == "bat")
-                {
-                    gameObject.transform.position = new Vector3(gameObject.transform.position.x, 3f, gameObject.transform.position.z);
-                }
-            }
-        }
-    }*/
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(this.transform.position, raio);
         Gizmos.DrawWireSphere(this.transform.position, raio + 1);
-        //Gizmos.DrawWireSphere(this.transform.position, raioCh);
     }
 }

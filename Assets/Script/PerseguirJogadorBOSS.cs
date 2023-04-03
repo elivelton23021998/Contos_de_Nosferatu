@@ -22,8 +22,6 @@ public class PerseguirJogadorBOSS : MonoBehaviour
 
     public GameObject BossFightCam, DeathCam;
 
-    //public static bool iniciarPerseguicao = false;
-
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -39,9 +37,6 @@ public class PerseguirJogadorBOSS : MonoBehaviour
 
     private void Update()
     {
-       // print(indicador);
-        //if (iniciarPerseguicao)
-        //{
         navMeshAgent.SetDestination(jogador.transform.position);
         anim.SetBool("PerseguirJogador", true);
         dist = Vector3.Distance(jogador.position, transform.position);
@@ -50,11 +45,7 @@ public class PerseguirJogadorBOSS : MonoBehaviour
         {
             StartCoroutine(jogadorScript.Morte());
             jogadorScript.ok = true;
-          //  transform.position = resetPos.transform.position;
-
-
         }
-        //}
 
         if (indicador >= 3)
         {
@@ -76,8 +67,8 @@ public class PerseguirJogadorBOSS : MonoBehaviour
 
             if (tempo >= 3f)
             {
+                PlayerPrefs.DeleteAll();
                 SceneManager.LoadScene("Cutscene Final");
-                //painel.SetActive(true);
             }
         }    
     }

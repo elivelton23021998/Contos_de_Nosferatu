@@ -123,6 +123,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 82301203725c2174887dbaedc290792a, type: 2}
+--- !u!114 &16613733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230581533235535, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 641329355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &16613735 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 260230581533235528, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 641329355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &17382917
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +259,17 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab1f9ac2a54e5d740b5b2051f071955a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &78662827 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230582120700462, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 641329355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &111477118
@@ -1330,6 +1357,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 260230581533235529, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Name
+      value: Tela de Fim
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581533235529, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581533235535, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581533235535, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581533235535, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581533235535, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581533235535, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 260230581825240537, guid: ad9b56306738a57458078912752dc5f8, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1378,8 +1433,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 260230582120700456, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Name
+      value: Tela de Morte
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230582120700462, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d44b93f31f388304980973154714a679, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+--- !u!114 &641329356 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230580463813533, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 641329355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &654743533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,7 +1615,7 @@ GameObject:
   - component: {fileID: 828084887}
   m_Layer: 6
   m_Name: chave
-  m_TagString: Save
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1573,7 +1647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 641329356}
   objetivo: Portas precisam de chaves para serem abertas!
 --- !u!65 &828084888
 BoxCollider:
@@ -1717,6 +1791,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaebf9d114ce01049ba5f712f70a2fed, type: 3}
+--- !u!1 &962867843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962867844}
+  - component: {fileID: 962867846}
+  - component: {fileID: 962867845}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &962867844
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962867843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 16613735}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &962867845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962867843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 76f0d07d2b8bda84bb659b559236366e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &962867846
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962867843}
+  m_CullTransparentMesh: 1
 --- !u!64 &1025622343
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2439,7 +2589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db21115b81c275b4d95c76735ee203e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  telaFim: {fileID: 0}
+  telaFim: {fileID: 16613733}
 --- !u!65 &1223312245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2783,7 +2933,7 @@ GameObject:
   - component: {fileID: 1347506398}
   m_Layer: 6
   m_Name: arrastar
-  m_TagString: Save
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2815,7 +2965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 641329356}
   objetivo: "Voc\xEA pode usar o bot\xE3o esquerdo do mouse para mover objetos"
 --- !u!65 &1347506399
 BoxCollider:
@@ -3353,7 +3503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 641329356}
   objetivo: Aperte W, A, S, D para andar e Pressione SHIFT para correr
 --- !u!65 &1446567621
 BoxCollider:
@@ -3577,7 +3727,7 @@ GameObject:
   - component: {fileID: 1466538467}
   m_Layer: 6
   m_Name: espanta vampiro
-  m_TagString: Save
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3609,7 +3759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 641329356}
   objetivo: as velas tambem espantam morcegos
 --- !u!65 &1466538468
 BoxCollider:
@@ -4498,7 +4648,7 @@ GameObject:
   - component: {fileID: 1699350137}
   m_Layer: 6
   m_Name: Pula
-  m_TagString: Save
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4515,7 +4665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 641329356}
   objetivo: "Pressione a  Barra de Espa\xE7o para pular"
 --- !u!65 &1699350138
 BoxCollider:
@@ -4545,6 +4695,17 @@ Transform:
   m_Father: {fileID: 547941893}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 45.748, z: 0}
+--- !u!114 &1755973243 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 242299955, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 641329355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1810529464
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,7 +4823,7 @@ GameObject:
   - component: {fileID: 1823063933}
   m_Layer: 6
   m_Name: Interagir com objetos fixos
-  m_TagString: Save
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4694,7 +4855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 641329356}
   objetivo: Pressione a tecla E para interagir com objetos
 --- !u!65 &1823063934
 BoxCollider:
@@ -4722,7 +4883,7 @@ GameObject:
   - component: {fileID: 1824035786}
   m_Layer: 6
   m_Name: vela
-  m_TagString: Save
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4754,7 +4915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 641329356}
   objetivo: Aperte E em frente a uma tocha acesa  para ascender uma vela e vice-versa
 --- !u!65 &1824035787
 BoxCollider:
@@ -7544,15 +7705,15 @@ PrefabInstance:
     - target: {fileID: 9110922615560720168, guid: 2011af9170259e34a8f79a7cf73f3f7e, type: 3}
       propertyPath: keyIcon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1755973243}
     - target: {fileID: 9110922615560720168, guid: 2011af9170259e34a8f79a7cf73f3f7e, type: 3}
       propertyPath: telaFim
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 16613733}
     - target: {fileID: 9110922615560720168, guid: 2011af9170259e34a8f79a7cf73f3f7e, type: 3}
       propertyPath: telaMorte
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 78662827}
     - target: {fileID: 9110922615560720173, guid: 2011af9170259e34a8f79a7cf73f3f7e, type: 3}
       propertyPath: m_StepOffset
       value: 0.5

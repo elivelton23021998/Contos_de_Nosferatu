@@ -39,9 +39,9 @@ public class Fim : MonoBehaviour
             telaFim.color = cor;
             yield return null;
         }
-        //textos.SetActive(true);
 
         yield return new WaitForSeconds(4);
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Menu");
 
 

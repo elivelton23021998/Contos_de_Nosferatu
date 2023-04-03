@@ -55,11 +55,5 @@ namespace Jogador
             Time.timeScale = 1f;
             SceneManager.LoadScene("Menu");
         }
-
-
-        //public void Som()
-        //{
-        //    somPanel.SetActive(true);
-        //}
     }
 }

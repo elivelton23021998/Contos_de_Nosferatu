@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: ca2d83d087c30444c9e0de9d4da8c4e1, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 9b630899135c9394cb0c2364211450ec, type: 2}
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1363,6 +1363,7 @@ MonoBehaviour:
   jogador: {fileID: 7702727054510899890}
   jogadorScript: {fileID: 7885569905752042096}
   lustre: {fileID: 378118152}
+  block: {fileID: 644282726}
 --- !u!195 &60315972
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2154,7 +2155,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 100788674}
-  - component: {fileID: 100788680}
   - component: {fileID: 100788679}
   - component: {fileID: 100788678}
   - component: {fileID: 100788677}
@@ -2275,18 +2275,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &100788680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100788673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &100788681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2637,7 +2625,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117773615}
-  - component: {fileID: 117773621}
   - component: {fileID: 117773620}
   - component: {fileID: 117773619}
   - component: {fileID: 117773618}
@@ -2758,18 +2745,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &117773621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117773614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &117773622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3611,7 +3586,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 185777422}
-  - component: {fileID: 185777428}
   - component: {fileID: 185777427}
   - component: {fileID: 185777426}
   - component: {fileID: 185777425}
@@ -3732,18 +3706,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &185777428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185777421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &185777429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3896,6 +3858,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4339897982791373186, guid: cc87050995d6db37312b9a23701b4d69, type: 3}
+--- !u!114 &218450853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 242299955, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 1864952937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &239920179
 GameObject:
   m_ObjectHideFlags: 0
@@ -5203,7 +5176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "\"A porta est\xE1 fechada! Ser\xE1 que consigo alcan\xE7ar aquele buraco
     na parede?\""
 --- !u!65 &322508104
@@ -5311,7 +5284,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 339530418}
-  - component: {fileID: 339530424}
   - component: {fileID: 339530423}
   - component: {fileID: 339530422}
   - component: {fileID: 339530421}
@@ -5432,18 +5404,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &339530424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339530417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &339530425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5798,7 +5758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "\"\xD3timo! Agora n\xE3o tem volta... para onde eu posso ir?\""
 --- !u!65 &356134297
 BoxCollider:
@@ -5863,6 +5823,7 @@ Transform:
   - {fileID: 369131747}
   - {fileID: 1437645930}
   - {fileID: 1207324580}
+  - {fileID: 644282725}
   m_Father: {fileID: 356981780}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6689,7 +6650,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 395672059}
-  - component: {fileID: 395672065}
   - component: {fileID: 395672064}
   - component: {fileID: 395672063}
   - component: {fileID: 395672062}
@@ -6810,18 +6770,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &395672065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395672058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &395672066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8165,7 +8113,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 448651547}
-  - component: {fileID: 448651553}
   - component: {fileID: 448651552}
   - component: {fileID: 448651551}
   - component: {fileID: 448651550}
@@ -8286,18 +8233,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &448651553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448651546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &448651554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8790,7 +8725,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468435573}
-  - component: {fileID: 468435579}
   - component: {fileID: 468435578}
   - component: {fileID: 468435577}
   - component: {fileID: 468435576}
@@ -8911,18 +8845,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &468435579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468435572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &468435580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9558,7 +9480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "\"Ao final do corredor eu consigo chegar no sal\xE3o pela cozinha!\""
 --- !u!65 &497154191
 BoxCollider:
@@ -10962,7 +10884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "\"Que lugar \xE9 esse? E o que \xE9 aquilo?\""
 --- !u!65 &560805866
 BoxCollider:
@@ -11304,7 +11226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: Aperte W A S D para se movimentar e pressione SHIFT para correr
 --- !u!65 &607265504
 BoxCollider:
@@ -11819,6 +11741,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642707816}
   m_Mesh: {fileID: -1907771039617625776, guid: b51ce930d83b66e41a4976c679219a74, type: 3}
+--- !u!1 &644282724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 644282725}
+  - component: {fileID: 644282726}
+  m_Layer: 0
+  m_Name: block
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &644282725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644282724}
+  m_LocalRotation: {x: 0.5161646, y: 0.48329502, z: -0.48329493, w: 0.5161648}
+  m_LocalPosition: {x: -11.074, y: -0.33, z: 69.301}
+  m_LocalScale: {x: 448.72446, y: 811.04895, z: 575.7515}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356145877}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: -86.233}
+--- !u!65 &644282726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644282724}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.033602353, y: 0.012736862, z: 0.020754026}
+  m_Center: {x: -0.002344258, y: -0.000000018541085, z: -0.008412434}
 --- !u!1 &646475870
 GameObject:
   m_ObjectHideFlags: 0
@@ -11828,7 +11795,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 646475871}
-  - component: {fileID: 646475877}
   - component: {fileID: 646475876}
   - component: {fileID: 646475875}
   - component: {fileID: 646475874}
@@ -11949,18 +11915,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &646475877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 646475870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &646475878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12146,7 +12100,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659874634}
-  - component: {fileID: 659874640}
   - component: {fileID: 659874639}
   - component: {fileID: 659874638}
   - component: {fileID: 659874637}
@@ -12267,18 +12220,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &659874640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659874633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &659874641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13057,7 +12998,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700381362}
-  - component: {fileID: 700381368}
   - component: {fileID: 700381367}
   - component: {fileID: 700381366}
   - component: {fileID: 700381365}
@@ -13178,18 +13118,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &700381368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700381361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &700381369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13426,6 +13354,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &710712840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230582120700462, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 1864952937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &712754869
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16161,7 +16100,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 848305388}
-  - component: {fileID: 848305394}
   - component: {fileID: 848305393}
   - component: {fileID: 848305392}
   - component: {fileID: 848305391}
@@ -16282,18 +16220,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &848305394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848305387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &848305395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19473,7 +19399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "Aperte Espa\xE7o para subir a escada"
 --- !u!65 &1057899873
 BoxCollider:
@@ -19964,7 +19890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "\"Essa cozinha est\xE1 bem escura\""
 --- !u!65 &1093173796
 BoxCollider:
@@ -20708,7 +20634,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1137720603}
-  - component: {fileID: 1137720609}
   - component: {fileID: 1137720608}
   - component: {fileID: 1137720607}
   - component: {fileID: 1137720606}
@@ -20829,18 +20754,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1137720609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137720602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1137720610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22995,6 +22908,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6827369342044866945, guid: c0043ba05ca4d1b459714c21ef35dbc0, type: 3}
+--- !u!114 &1231050435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230580463813533, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 1864952937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1241021076
 GameObject:
   m_ObjectHideFlags: 0
@@ -23822,7 +23746,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1252970308}
-  - component: {fileID: 1252970314}
   - component: {fileID: 1252970313}
   - component: {fileID: 1252970312}
   - component: {fileID: 1252970311}
@@ -23943,18 +23866,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1252970314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252970307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1252970315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24361,7 +24272,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286736398}
-  - component: {fileID: 1286736404}
   - component: {fileID: 1286736403}
   - component: {fileID: 1286736402}
   - component: {fileID: 1286736401}
@@ -24482,18 +24392,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1286736404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286736397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1286736405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24782,7 +24680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: '"Talvez possa usar aquela caixa!"'
 --- !u!65 &1306353954
 BoxCollider:
@@ -24842,7 +24740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: Aperte E para interagir com objetos
 --- !u!65 &1316248575
 BoxCollider:
@@ -25010,7 +24908,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1325936987}
-  - component: {fileID: 1325936993}
   - component: {fileID: 1325936992}
   - component: {fileID: 1325936991}
   - component: {fileID: 1325936990}
@@ -25131,18 +25028,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1325936993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325936986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1325936994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25693,7 +25578,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1366411168}
-  - component: {fileID: 1366411174}
   - component: {fileID: 1366411173}
   - component: {fileID: 1366411172}
   - component: {fileID: 1366411171}
@@ -25814,18 +25698,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1366411174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366411167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1366411175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25847,7 +25719,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1367560463}
-  - component: {fileID: 1367560469}
   - component: {fileID: 1367560468}
   - component: {fileID: 1367560467}
   - component: {fileID: 1367560466}
@@ -25968,18 +25839,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1367560469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367560462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1367560470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26875,7 +26734,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426296560}
-  - component: {fileID: 1426296566}
   - component: {fileID: 1426296565}
   - component: {fileID: 1426296564}
   - component: {fileID: 1426296563}
@@ -26996,18 +26854,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1426296566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426296559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1426296567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28039,7 +27885,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469108578}
-  - component: {fileID: 1469108584}
   - component: {fileID: 1469108583}
   - component: {fileID: 1469108582}
   - component: {fileID: 1469108581}
@@ -28160,18 +28005,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1469108584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469108577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1469108585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28193,7 +28026,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1472536709}
-  - component: {fileID: 1472536715}
   - component: {fileID: 1472536714}
   - component: {fileID: 1472536713}
   - component: {fileID: 1472536712}
@@ -28314,18 +28146,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1472536715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472536708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1472536716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30340,7 +30160,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1572565327}
-  - component: {fileID: 1572565333}
   - component: {fileID: 1572565332}
   - component: {fileID: 1572565331}
   - component: {fileID: 1572565330}
@@ -30461,18 +30280,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1572565333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572565326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1572565334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30806,7 +30613,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1597231367}
-  - component: {fileID: 1597231373}
   - component: {fileID: 1597231372}
   - component: {fileID: 1597231371}
   - component: {fileID: 1597231370}
@@ -30927,18 +30733,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1597231373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597231366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1597231374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31084,7 +30878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "Empurre objetos com o bot\xE3o Esquerdo do Mouse"
 --- !u!65 &1600875234
 BoxCollider:
@@ -31228,7 +31022,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1614704644}
-  - component: {fileID: 1614704650}
   - component: {fileID: 1614704649}
   - component: {fileID: 1614704648}
   - component: {fileID: 1614704647}
@@ -31349,18 +31142,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1614704650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614704643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1614704651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32517,7 +32298,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1668235846}
-  - component: {fileID: 1668235852}
   - component: {fileID: 1668235851}
   - component: {fileID: 1668235850}
   - component: {fileID: 1668235849}
@@ -32638,18 +32418,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1668235852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668235845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1668235853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32671,7 +32439,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1674551546}
-  - component: {fileID: 1674551552}
   - component: {fileID: 1674551551}
   - component: {fileID: 1674551550}
   - component: {fileID: 1674551549}
@@ -32792,18 +32559,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1674551552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674551545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1674551553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32989,7 +32744,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1684526118}
-  - component: {fileID: 1684526124}
   - component: {fileID: 1684526123}
   - component: {fileID: 1684526122}
   - component: {fileID: 1684526121}
@@ -33110,18 +32864,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1684526124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684526117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1684526125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33481,7 +33223,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1699467910}
-  - component: {fileID: 1699467916}
   - component: {fileID: 1699467915}
   - component: {fileID: 1699467914}
   - component: {fileID: 1699467913}
@@ -33602,18 +33343,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1699467916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699467909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1699467917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33976,7 +33705,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1725880694}
-  - component: {fileID: 1725880700}
   - component: {fileID: 1725880699}
   - component: {fileID: 1725880698}
   - component: {fileID: 1725880697}
@@ -34097,18 +33825,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1725880700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725880693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1725880701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34401,7 +34117,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1748325971}
-  - component: {fileID: 1748325977}
   - component: {fileID: 1748325976}
   - component: {fileID: 1748325975}
   - component: {fileID: 1748325974}
@@ -34522,18 +34237,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1748325977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748325970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1748325978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34723,7 +34426,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1768815057}
-  - component: {fileID: 1768815063}
   - component: {fileID: 1768815062}
   - component: {fileID: 1768815061}
   - component: {fileID: 1768815060}
@@ -34844,18 +34546,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1768815063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768815056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1768815064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35330,7 +35020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "\"Acho que n\xE3o consigo passar por aqui! Tenho que encontrar outro
     caminho!\""
 --- !u!65 &1812494974
@@ -35355,7 +35045,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1828774717}
-  - component: {fileID: 1828774723}
   - component: {fileID: 1828774722}
   - component: {fileID: 1828774721}
   - component: {fileID: 1828774720}
@@ -35476,18 +35165,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1828774723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828774716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1828774724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35673,7 +35350,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1829516878}
-  - component: {fileID: 1829516884}
   - component: {fileID: 1829516883}
   - component: {fileID: 1829516882}
   - component: {fileID: 1829516881}
@@ -35794,18 +35470,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1829516884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829516877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1829516885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35921,7 +35585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: "Aperte ESC para acessar o Menu e Espa\xE7o para pular"
 --- !u!65 &1842409393
 BoxCollider:
@@ -36172,6 +35836,70 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 260230580463813523, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230580463813523, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230580463813523, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 173.84729
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230580463813533, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581129118704, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581129118704, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581129118704, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581129118704, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581129118704, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -789
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581129118704, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 447
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581454966396, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581454966396, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581454966396, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581454966396, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581454966396, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 961
+      objectReference: {fileID: 0}
+    - target: {fileID: 260230581454966396, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -540
+      objectReference: {fileID: 0}
     - target: {fileID: 260230581825240537, guid: ad9b56306738a57458078912752dc5f8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -36245,7 +35973,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870248727}
-  - component: {fileID: 1870248733}
   - component: {fileID: 1870248732}
   - component: {fileID: 1870248731}
   - component: {fileID: 1870248730}
@@ -36366,18 +36093,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1870248733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870248726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1870248734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36434,6 +36149,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1f9ac2a54e5d740b5b2051f071955a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1877066749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230581533235535, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 1864952937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1882431751
 GameObject:
   m_ObjectHideFlags: 0
@@ -36443,7 +36169,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1882431752}
-  - component: {fileID: 1882431758}
   - component: {fileID: 1882431757}
   - component: {fileID: 1882431756}
   - component: {fileID: 1882431755}
@@ -36564,18 +36289,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1882431758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882431751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1882431759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36977,7 +36690,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1910179402}
-  - component: {fileID: 1910179408}
   - component: {fileID: 1910179407}
   - component: {fileID: 1910179406}
   - component: {fileID: 1910179405}
@@ -37098,18 +36810,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1910179408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910179401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1910179409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37738,7 +37438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1ff0d0da79264f915f76981b45778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: {fileID: 0}
+  texto: {fileID: 1231050435}
   objetivo: '"Tenho que tomar cuidado com o buraco"'
 --- !u!65 &1928619101
 BoxCollider:
@@ -37928,7 +37628,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939305270}
-  - component: {fileID: 1939305276}
   - component: {fileID: 1939305275}
   - component: {fileID: 1939305274}
   - component: {fileID: 1939305273}
@@ -38049,18 +37748,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1939305276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939305269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1939305277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38082,7 +37769,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1941023339}
-  - component: {fileID: 1941023345}
   - component: {fileID: 1941023344}
   - component: {fileID: 1941023343}
   - component: {fileID: 1941023342}
@@ -38203,18 +37889,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1941023345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941023338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1941023346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38600,7 +38274,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983289511}
-  - component: {fileID: 1983289517}
   - component: {fileID: 1983289516}
   - component: {fileID: 1983289515}
   - component: {fileID: 1983289514}
@@ -38721,18 +38394,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1983289517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983289510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1983289518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38782,7 +38443,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1990304163}
-  - component: {fileID: 1990304169}
   - component: {fileID: 1990304168}
   - component: {fileID: 1990304167}
   - component: {fileID: 1990304166}
@@ -38903,18 +38563,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1990304169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990304162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1990304170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40058,7 +39706,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2044514293}
-  - component: {fileID: 2044514299}
   - component: {fileID: 2044514298}
   - component: {fileID: 2044514297}
   - component: {fileID: 2044514296}
@@ -40179,18 +39826,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2044514299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044514292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2044514300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108052,22 +107687,15 @@ MonoBehaviour:
   lmChao:
     serializedVersion: 2
     m_Bits: 8
-  centroT: {fileID: 7885569905313028473}
-  lmTeto:
-    serializedVersion: 2
-    m_Bits: 128
-  abaixado: 0
-  temTeto: 0
-  telaMorte: {fileID: 0}
-  telaFim: {fileID: 0}
+  telaMorte: {fileID: 1877066749}
+  telaFim: {fileID: 710712840}
   respawnPos: {x: 0, y: 0, z: 0}
   respawnRot: {x: 0, y: 0, z: 0, w: 0}
   ok: 0
   morrendo: 0
   resetInimigo: 0
   key: 0
-  keyIcon: {fileID: 0}
-  faseAtual: J2
+  keyIcon: {fileID: 218450853}
 --- !u!95 &7885569905752042097
 Animator:
   serializedVersion: 5

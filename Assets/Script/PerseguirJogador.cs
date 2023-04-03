@@ -22,6 +22,8 @@ public class PerseguirJogador : MonoBehaviour
 
     public Rigidbody lustre;
 
+    public BoxCollider block;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -39,6 +41,7 @@ public class PerseguirJogador : MonoBehaviour
         }
 
         tempoCountDown.enabled = false;
+        block.enabled = true;
     }
 
     private void Update()
@@ -49,11 +52,8 @@ public class PerseguirJogador : MonoBehaviour
 
         if (dist <= 2.5f)
         {
-            //AtivarCutscene.iniciarTimer = false;
             StartCoroutine(jogadorScript.Morte());
-           // tempo = 30;
             jogadorScript.ok =true;
-            //tempoCountDown.enabled = false;
         }
 
         if (AtivarCutscene.iniciarTimer)
@@ -69,8 +69,8 @@ public class PerseguirJogador : MonoBehaviour
         if (tempo <= 0)
         {
             tempoCountDown.enabled = false;
+            block.enabled= false;
 
-            //INICIAR ANIMA��O DE CAIR O LUSTRE E QUEBRAR O CH�O
             lustre.isKinematic = false;
         }
     }

@@ -20,7 +20,7 @@ public class MenuScript : MonoBehaviour
 
     void Start()
     {
-        //PlayerPrefs.SetFloat("rotacaoW", respawnRot.w);    PlayerPrefs.GetString("faseAtual")
+        
         slider.maxValue = 1;
         intensidade = PlayerPrefs.GetFloat("Brilho");
         slider.value = intensidade; 
@@ -55,15 +55,7 @@ public class MenuScript : MonoBehaviour
 
     public void Update()
     {
-        /*for (int i = 0; i < luzes.Length; i++)
-        {
-            luzes[i].intensity = orglightsintensity[i] * intensidade;
-        }
-
-        if (intensidade <= 0.1f)
-        {
-            intensidade = 0.1f;
-        }*/
+ 
     }
 
     public void NovoJogo()

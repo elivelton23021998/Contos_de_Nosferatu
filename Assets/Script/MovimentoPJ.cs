@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using Cinemachine;
 using Jogador;
-
-
+using System;
 
 [RequireComponent(typeof(CharacterController))]
 public class MovimentoPJ : MonoBehaviour
@@ -23,7 +22,6 @@ public class MovimentoPJ : MonoBehaviour
     [SerializeField] private bool estaChao;
     public float velocidade = 0f;
     private float velocAnda = 4.0f;
-    private float velocAbaixa = 2.0f;
     private float velocCorre = 7.0f;
     private float alturaPulo = 2.0f;
     private float gravidade = -18.81f;
@@ -37,14 +35,6 @@ public class MovimentoPJ : MonoBehaviour
     private float raio = 0.2f;
     public LayerMask lmChao;
 
-    //VARIAVEIS ABAIXAR
-    public Transform centroT;
-    private Transform tr;
-    public LayerMask lmTeto;
-    private float altura;
-    public bool abaixado;
-    public bool temTeto;
-
     //MORTE
     bool movendo = true, morto;
     //public bool morteBoss;
@@ -57,13 +47,14 @@ public class MovimentoPJ : MonoBehaviour
 
     GameObject[] cameras;
 
-     public bool ok, morrendo, resetInimigo, key;
+    public bool ok, morrendo, resetInimigo, key;
     public Image keyIcon;
-    public string faseAtual;
+    string faseAtual;
 
 
     private void Start()
     {
+        faseAtual = SceneManager.GetActiveScene().name;
         cameras = GameObject.FindGameObjectsWithTag("Cameras");
         
             //PlayerPrefs.GetFloat("posicaoX", respawnPos.x);
@@ -91,9 +82,6 @@ public class MovimentoPJ : MonoBehaviour
         mp1 = GameObject.Find("Morcego_Guia1").GetComponent<MorcegoPatrulha>();
         keyIcon = GameObject.Find("Key_Ico").GetComponent<Image>();
 
-        tr = transform;
-        altura = controlador.height;
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -105,11 +93,9 @@ public class MovimentoPJ : MonoBehaviour
        
         if (PlayerPrefs.GetString("faseAtual") != null)
         {
-            PlayerPrefs.SetString("faseAtual", faseAtual);
+            PlayerPrefs.SetString("faseAtual", SceneManager.GetActiveScene().name);
         }
-        if (PlayerPrefs.GetString("faseAtual") != faseAtual) SceneManager.LoadScene(PlayerPrefs.GetString("faseAtual"));
-
-
+        if (PlayerPrefs.GetString("faseAtual") != SceneManager.GetActiveScene().name) SceneManager.LoadScene(PlayerPrefs.GetString("faseAtual"));
 
         if (PlayerPrefs.GetInt("primeiraVez") == 1)
         { 
@@ -124,34 +110,14 @@ public class MovimentoPJ : MonoBehaviour
         if (key) keyIcon.enabled = true;
         else if (!key) keyIcon.enabled = false;
 
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            SceneManager.LoadScene("GameParte1");
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SceneManager.LoadScene("Boss");
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            PlayerPrefs.DeleteAll();
-        }
-
         if (morto) return;
         if (movendo && !mp.pegouJogador && !mp1.pegouJogador) Mover();
     }
 
     public void Mover()
     {
-        float a = altura;
-
         //MOVIMENTO
         estaChao = Physics.CheckSphere(centro.position, raio, lmChao);
-        temTeto = Physics.CheckSphere(centroT.position, raio, lmTeto);
-        //////////////////////////temObj = Physics.CheckSphere(frente.position, raio, lmObj);
 
         //CAMERA POS
         Vector3 direcaoFrente = new Vector3(cam.transform.forward.x, 0, cam.transform.forward.z);
@@ -168,14 +134,12 @@ public class MovimentoPJ : MonoBehaviour
             jogadorVelocity.y = -2f;
         }
 
-        //Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
-
         Vector3 move = direcaoFrente + direcaoLado;
         if (move.sqrMagnitude > 1)
         {
             move.Normalize();
         }
-        ///////////
+    
 
         //ROTA��O
         if (move.magnitude >= 0.1f)
@@ -193,7 +157,7 @@ public class MovimentoPJ : MonoBehaviour
         {
             velocidade = 0f;
         }
-        ///////////
+
 
         //CORRER
         if (estaChao && Input.GetKey(KeyCode.LeftShift) && move != Vector3.zero)
@@ -205,56 +169,9 @@ public class MovimentoPJ : MonoBehaviour
         {
             anim.SetBool("EstaCorrendo", false);
         }
-        ///////////
-
-        //ABAIXAR
-        //if (Input.GetKey(KeyCode.LeftControl))
-        //{
-        //    abaixado = true;
-        //}
-        //else if (!temTeto)
-        //{
-        //    abaixado = false;
-        //}
-
-        //if (abaixado)
-        //{
-        //    a = 0.5f * altura;
-        //    velocidade = velocAbaixa;
-        //    anim.SetBool("EstaAbaixado", true);
-        //}
-        //else
-        //{
-        //    anim.SetBool("EstaAbaixado", false);
-        //}
-
-        //if (abaixado && move != Vector3.zero)
-        //{
-        //    anim.SetBool("EstaAndandoAbaixado", true);
-        //}
-        //else anim.SetBool("EstaAndandoAbaixado", false);
-
-        /*
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            Vector3 fPosicao = filho.position;
-            fPosicao.y = filho.position.y + 0.5f;
-            filho.position = fPosicao;
-        }
-        if (Input.GetKeyUp(KeyCode.LeftControl) && !temTeto)
-        {
-            Vector3 fPosicao = filho.position;
-            fPosicao.y = filho.position.y - 0.5f;
-            filho.position = fPosicao;
-        }
-        */
+       
 
         float ultimaAltura = controlador.height;
-        controlador.height = Mathf.Lerp(controlador.height, a, 5);
-        Vector3 tmpPosicao = tr.position;
-        tmpPosicao.y += (controlador.height - ultimaAltura) / 2;
-        tr.position = tmpPosicao;
-        ///////////
 
         //CONTINUA��O MOVIMENTO
         controlador.Move(move * Time.deltaTime * velocidade);
@@ -272,20 +189,14 @@ public class MovimentoPJ : MonoBehaviour
         ///////////
 
         //PULO
-        if (Input.GetButtonDown("Jump") && estaChao && !abaixado)
+        if (Input.GetButtonDown("Jump") && estaChao)
         {
             jogadorVelocity.y += Mathf.Sqrt(alturaPulo * -3.0f * gravidade);
             anim.SetBool("Pulo", true);
         }
         else anim.SetBool("Pulo", false);
 
-        /*if (Input.GetButtonDown("Jump") && estaChao && !abaixado && velocidade == velocCorre)
-        {
-            jogadorVelocity.y += Mathf.Sqrt(alturaPulo * -3.0f * gravidade);
-            anim.SetBool("PuloCorre", true);
-        }
-        else anim.SetBool("PuloCorre", false);
-        */
+
 
         jogadorVelocity.y += gravidade * Time.deltaTime;
         controlador.Move(jogadorVelocity * Time.deltaTime);
@@ -293,17 +204,17 @@ public class MovimentoPJ : MonoBehaviour
     public IEnumerator Morte()
     {
 
-       // Debug.Log("Morreu");
         yield return null;
         
         
         if (!morrendo)
         {
+
+            PlayerPrefs.SetInt("primeiraVez", 1);
             morrendo = true;
             telaMorte.gameObject.SetActive(true);
             GetComponent<CharacterController>().enabled = false;
             movendo = false;
-            //GetComponent<Visao>().enabled = false;
 
 
             yield return new WaitForSeconds(1);
@@ -318,7 +229,8 @@ public class MovimentoPJ : MonoBehaviour
             }
             telaMorte.color = cor;
 
-            if (ok) SceneManager.LoadScene(faseAtual);
+            if (ok) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
 
             transform.position = respawnPos;
             transform.rotation = respawnRot;
@@ -354,7 +266,6 @@ public class MovimentoPJ : MonoBehaviour
         telaFim.gameObject.SetActive(true);
         GetComponent<CharacterController>().enabled = false;
         movendo = false;
-        //GetComponent<Visao>().enabled = false;
 
 
         yield return new WaitForSeconds(1);
@@ -374,6 +285,7 @@ public class MovimentoPJ : MonoBehaviour
 
 
 
+        PlayerPrefs.SetInt("primeiraVez", 0);
         SceneManager.LoadScene("Menu");
 
     }
@@ -383,7 +295,10 @@ public class MovimentoPJ : MonoBehaviour
         if (other.CompareTag("Inimigo"))
         {
             StartCoroutine(Morte());
-            other.GetComponent<Inimigo_Controlador>().resetarPosicao = true;
+            if (other.GetComponent<Inimigo_Controlador>())
+            {
+                StartCoroutine(other.GetComponent<Inimigo_Controlador>().ResetPosition());
+            }
         }
 
         if (other.CompareTag("End"))
@@ -393,6 +308,8 @@ public class MovimentoPJ : MonoBehaviour
 
         if (other.CompareTag("Next"))
         {
+
+            PlayerPrefs.SetInt("primeiraVez", 0);
             SceneManager.LoadScene("Boss");
         }
 
@@ -412,7 +329,6 @@ public class MovimentoPJ : MonoBehaviour
             //MORTE
             respawnPos = transform.position;
             respawnRot = transform.rotation;
-            //SALVA PRO CONTINUE = pra deletar td =  PlayerPrefs.DeleteAll();
             PlayerPrefs.SetFloat("posicaoX", respawnPos.x);
             PlayerPrefs.SetFloat("posicaoY", respawnPos.y);
             PlayerPrefs.SetFloat("posicaoZ", respawnPos.z);
@@ -420,9 +336,13 @@ public class MovimentoPJ : MonoBehaviour
             PlayerPrefs.SetFloat("rotacaoY", respawnRot.y);
             PlayerPrefs.SetFloat("rotacaoZ", respawnRot.z);
             PlayerPrefs.SetFloat("rotacaoW", respawnRot.w);
-            PlayerPrefs.SetString("faseAtual", faseAtual);
+            PlayerPrefs.SetString("faseAtual", SceneManager.GetActiveScene().name);
             Destroy(other.gameObject);
-            PlayerPrefs.SetInt("primeiraVez", 1);
         }
+    }
+
+    private void Invoke(object v1, int v2)
+    {
+        throw new NotImplementedException();
     }
 }

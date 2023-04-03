@@ -29,7 +29,7 @@ namespace Jogador
 
         public float delay;
 
-        public bool resetarPosicao;
+       
         Vector3 reset;
 
         // Start is called before the first frame update
@@ -50,20 +50,7 @@ namespace Jogador
         // Update is called once per frame
         void Update()
         {
-            if (resetarPosicao)
-            {
-                transform.position = reset;
-                resetarPosicao = false;
-            }
-            /*if (pauseMenu.ativado)
-            {
-            agente.enabled=false;
-            return;
-            }
-            else
-            {
-            agente.enabled = true;
-            }*/
+         
             if (!Pause.jogoPausado)
             {
                 agente.enabled = true;
@@ -98,6 +85,12 @@ namespace Jogador
                     }
                 }
             }
+        }
+
+        public IEnumerator ResetPosition()
+        {
+            yield return new WaitForSeconds(2);
+            transform.position = reset;
         }
 
         void Patrol()
@@ -137,18 +130,10 @@ namespace Jogador
             }
             return false;
         }
-
-
-
-
-
         //public virtual void OnDrawnGizmos()
         //{
         //    Gizmos.color = Color.red;
         //    Gizmos.DrawSphere(transform.position, debugDrawRadius);
         //}
-
-
-
     }
 }

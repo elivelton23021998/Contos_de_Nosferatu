@@ -24,7 +24,6 @@ public class AtivarCutscene : MonoBehaviour
     {
         pd = GetComponent<PlayableDirector>();
         bc = GetComponent<BoxCollider>();
-        //tempoCountDown.enabled = false;
         pd.enabled = false;
         iniciarTempo = false;
         Nosferatu.SetActive(false);

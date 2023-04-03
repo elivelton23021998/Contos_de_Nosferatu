@@ -11,6 +11,7 @@ public class Inicia_Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.DeleteAll();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -49,6 +50,7 @@ public class Inicia_Game : MonoBehaviour
 
 
 
+        PlayerPrefs.SetInt("primeiraVez", 0);
         SceneManager.LoadScene("Cutscene");
 
     }

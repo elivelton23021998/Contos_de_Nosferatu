@@ -11,6 +11,7 @@ public class Count : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (nomeCena == "Menu") PlayerPrefs.DeleteAll();
         StartCoroutine (Game ());
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -25,8 +26,6 @@ public class Count : MonoBehaviour
     IEnumerator Game()
     {
         yield return new WaitForSeconds(tempo);
-        
-        if (nomeCena == "Menu") PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(nomeCena);
     }
 }
