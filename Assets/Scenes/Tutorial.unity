@@ -297,7 +297,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111477118}
-  m_LocalRotation: {x: 0.01252966, y: 0.9257381, z: -0.030791456, w: 0.37670138}
+  m_LocalRotation: {x: 0.012529659, y: 0.9257381, z: -0.030791454, w: 0.37670138}
   m_LocalPosition: {x: -21.43, y: 13.64, z: -34.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1454,6 +1454,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &641329357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 242299953, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 641329355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &654743533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,7 +2014,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051457812}
-  m_LocalRotation: {x: 0.01252966, y: 0.9257381, z: -0.030791456, w: 0.37670138}
+  m_LocalRotation: {x: 0.012529659, y: 0.9257381, z: -0.030791454, w: 0.37670138}
   m_LocalPosition: {x: -21.43, y: 13.639999, z: -34.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4700,7 +4705,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 242299955, guid: ad9b56306738a57458078912752dc5f8, type: 3}
   m_PrefabInstance: {fileID: 641329355}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 641329357}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -7721,7 +7726,7 @@ PrefabInstance:
     - target: {fileID: 9110922615560720174, guid: 2011af9170259e34a8f79a7cf73f3f7e, type: 3}
       propertyPath: chaveIcon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 641329357}
     - target: {fileID: 9146420998245851225, guid: 2011af9170259e34a8f79a7cf73f3f7e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0041361325

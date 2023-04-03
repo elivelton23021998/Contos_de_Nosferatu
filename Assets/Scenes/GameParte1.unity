@@ -3863,7 +3863,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 242299955, guid: ad9b56306738a57458078912752dc5f8, type: 3}
   m_PrefabInstance: {fileID: 1864952937}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1864952938}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -35950,6 +35950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+--- !u!1 &1864952938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 242299953, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 1864952937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1866202444
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -107761,7 +107766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96eb26eefd0ec894f8950795b957694a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaveIcon: {fileID: 0}
+  chaveIcon: {fileID: 1864952938}
 --- !u!114 &7885569905752042103
 MonoBehaviour:
   m_ObjectHideFlags: 0
