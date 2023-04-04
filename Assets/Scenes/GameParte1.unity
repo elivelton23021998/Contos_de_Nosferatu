@@ -32430,6 +32430,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 153c3e768129702418e1e3c0d3570914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1669458033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230581562404062, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 1864952937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4b895801468b5499ef64a06bd2a44f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1674551545
 GameObject:
   m_ObjectHideFlags: 0
@@ -36468,17 +36479,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 34823431}
     m_Modifications:
     - target: {fileID: 145629721440710452, guid: 4e61369958ad9e941a79de743826e123, type: 3}
+      propertyPath: m_Name
+      value: Legenda
+      objectReference: {fileID: 0}
+    - target: {fileID: 145629721440710452, guid: 4e61369958ad9e941a79de743826e123, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 145629721440710454, guid: 4e61369958ad9e941a79de743826e123, type: 3}
       propertyPath: texto
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1231050435}
     - target: {fileID: 145629721883660001, guid: 4e61369958ad9e941a79de743826e123, type: 3}
       propertyPath: m_Name
       value: Morcego_Guia1
       objectReference: {fileID: 0}
+    - target: {fileID: 145629721883660002, guid: 4e61369958ad9e941a79de743826e123, type: 3}
+      propertyPath: telaFim
+      value: 
+      objectReference: {fileID: 1877066749}
     - target: {fileID: 145629721883660002, guid: 4e61369958ad9e941a79de743826e123, type: 3}
       propertyPath: destinos.Array.data[0]
       value: 
@@ -42395,11 +42414,15 @@ PrefabInstance:
     - target: {fileID: 145629721440710454, guid: 4e61369958ad9e941a79de743826e123, type: 3}
       propertyPath: texto
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1231050435}
     - target: {fileID: 145629721883660001, guid: 4e61369958ad9e941a79de743826e123, type: 3}
       propertyPath: m_Name
       value: Morcego_Guia
       objectReference: {fileID: 0}
+    - target: {fileID: 145629721883660002, guid: 4e61369958ad9e941a79de743826e123, type: 3}
+      propertyPath: telaFim
+      value: 
+      objectReference: {fileID: 1877066749}
     - target: {fileID: 145629721883660002, guid: 4e61369958ad9e941a79de743826e123, type: 3}
       propertyPath: destinos.Array.data[0]
       value: 
@@ -49345,6 +49368,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 34823431}
     m_Modifications:
+    - target: {fileID: 1507607381734186811, guid: a858bec23cb034c4fbcc9f43c3b1c97d, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1669458033}
     - target: {fileID: 1507607381734186811, guid: a858bec23cb034c4fbcc9f43c3b1c97d, type: 3}
       propertyPath: ponto.Array.data[0]
       value: 
@@ -94643,7 +94670,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7494197377470773719}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -94687,7 +94714,7 @@ MeshCollider:
   m_GameObject: {fileID: 7494197377470773719}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -94725,7 +94752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &7494197377470773723
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -94796,12 +94823,12 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7494197377576722607}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 47.746483
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -94858,12 +94885,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7494197377576722607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 600
+  m_Intensity: 0
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -95027,7 +95054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &7494197377601447132
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -95043,7 +95070,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7494197377601447128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -95087,7 +95114,7 @@ MeshCollider:
   m_GameObject: {fileID: 7494197377601447128}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -95122,7 +95149,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7494197377837763292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -95166,7 +95193,7 @@ MeshCollider:
   m_GameObject: {fileID: 7494197377837763292}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -95205,7 +95232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!137 &7494197378268345530
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -100057,7 +100084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7494197379159429388
 Transform:
   m_ObjectHideFlags: 0

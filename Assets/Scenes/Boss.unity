@@ -13501,6 +13501,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+--- !u!114 &1115386676 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 260230581562404062, guid: ad9b56306738a57458078912752dc5f8, type: 3}
+  m_PrefabInstance: {fileID: 1115386675}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4b895801468b5499ef64a06bd2a44f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1121458674
 GameObject:
   m_ObjectHideFlags: 0
@@ -18426,17 +18437,45 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7394215626285203006, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7394215626471303954, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ab8fea9b2e039474980a0d653d52f74c, type: 2}
+    - target: {fileID: 7394215627109487977, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394215627109487978, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7394215627109487988, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7394215627109487988, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394215627820426876, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394215627820426877, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7394215627820426879, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394215627820426879, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7394215627888535958, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
       propertyPath: m_Layer
@@ -18445,6 +18484,18 @@ PrefabInstance:
     - target: {fileID: 7394215627951897456, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394215627951897456, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394215627951897461, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394215627951897462, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7426207967841344668, guid: 6bb1323c30ed0d04a9cb46fa86c61e65, type: 3}
       propertyPath: m_Layer
@@ -21059,7 +21110,7 @@ PrefabInstance:
     - target: {fileID: 1507607381734186811, guid: a858bec23cb034c4fbcc9f43c3b1c97d, type: 3}
       propertyPath: pauseMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1115386676}
     - target: {fileID: 1507607381734186811, guid: a858bec23cb034c4fbcc9f43c3b1c97d, type: 3}
       propertyPath: ponto.Array.data[0]
       value: 
@@ -21076,6 +21127,10 @@ PrefabInstance:
       propertyPath: ponto.Array.data[3]
       value: 
       objectReference: {fileID: 316383033}
+    - target: {fileID: 4528823398997127129, guid: a858bec23cb034c4fbcc9f43c3b1c97d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4528823398997127134, guid: a858bec23cb034c4fbcc9f43c3b1c97d, type: 3}
       propertyPath: m_Name
       value: Minion
@@ -35898,7 +35953,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4839897311544971262}
-  m_LocalRotation: {x: 0.0073966803, y: 0.22051546, z: -0.0016722977, w: 0.975354}
+  m_LocalRotation: {x: 0.00739668, y: 0.22051546, z: -0.0016722978, w: 0.975354}
   m_LocalPosition: {x: -102.497, y: 0.40999985, z: -35.523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36084,7 +36139,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4839897312485406612}
-  m_LocalRotation: {x: 0.0073966803, y: 0.22051546, z: -0.0016722977, w: 0.975354}
+  m_LocalRotation: {x: 0.00739668, y: 0.22051546, z: -0.0016722978, w: 0.975354}
   m_LocalPosition: {x: -102.497, y: 0.41, z: -35.523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
