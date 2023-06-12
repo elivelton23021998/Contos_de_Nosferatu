@@ -20,6 +20,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-9099976722387501288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Plano de Fundo/Ambiente
+  m_EditorClassIdentifier: 
+  Name: Ambiente
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8842578378397224800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,6 +99,26 @@ MonoBehaviour:
   m_Name: parameter:/Plano de Fundo/Vento
   m_EditorClassIdentifier: 
   Name: Vento
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-8591105325604983994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: "parameter:/Plano de Fundo/Sal\xE3o"
+  m_EditorClassIdentifier: 
+  Name: "Sal\xE3o"
   Min: 0
   Max: 1
   Default: 0
@@ -1264,6 +1304,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 124000
+--- !u!114 &-4397638438929440323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Plano de Fundo/Vento
+  m_EditorClassIdentifier: 
+  Name: Vento
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4330621419562123661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,7 +1830,7 @@ MonoBehaviour:
   Path: Assets/Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638160372436370181
+  lastModified: 638221037690056940
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1882,9 +1942,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5613793434860681137}
-  - {fileID: 4271188727069249071}
-  - {fileID: -8175389604952471543}
+  - {fileID: -8591105325604983994}
+  - {fileID: -4397638438929440323}
+  - {fileID: -9099976722387501288}
   MinDistance: 0
   MaxDistance: 0
   Length: 110838
@@ -2027,7 +2087,7 @@ MonoBehaviour:
   - {fileID: 3156815107309350439}
   StringsBanks:
   - {fileID: -1451898396148949374}
-  stringsBankWriteTime: 638160372436370181
+  stringsBankWriteTime: 638221037690056940
   cacheVersion: 6
 --- !u!114 &279098893153374040
 MonoBehaviour:
@@ -2830,7 +2890,7 @@ MonoBehaviour:
   Path: Assets/Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638160372436360165
+  lastModified: 638221037690046243
   LoadResult: 0
   FileSizes: []
   Exists: 1

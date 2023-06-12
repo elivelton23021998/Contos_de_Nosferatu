@@ -37,7 +37,7 @@ public class Inicia_Game : MonoBehaviour
 
         Color cor = telaFim.color;
         cor.a = 0;
-        while (cor.a < 0.9f)
+        while (cor.a < 1f)
         {
             cor.a += Time.deltaTime;
             telaFim.color = cor;

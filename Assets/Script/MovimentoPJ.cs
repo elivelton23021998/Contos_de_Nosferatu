@@ -21,8 +21,8 @@ public class MovimentoPJ : MonoBehaviour
     //VARIAVEIS JOGADOR
     [SerializeField] private bool estaChao;
     public float velocidade = 0f;
-    private float velocAnda = 4.0f;
-    private float velocCorre = 7.0f;
+    private float velocAnda = 2.0f;
+    private float velocCorre = 6.0f;
     private float alturaPulo = 2.0f;
     private float gravidade = -18.81f;
 
@@ -221,7 +221,7 @@ public class MovimentoPJ : MonoBehaviour
 
             Color cor = telaMorte.color;
             cor.a = 0;
-            while (cor.a < 0.9f)
+            while (cor.a < 1f)
             {
                 cor.a += Time.deltaTime;
                 telaMorte.color = cor;
@@ -272,7 +272,7 @@ public class MovimentoPJ : MonoBehaviour
 
         Color cor = telaFim.color;
         cor.a = 0;
-        while (cor.a < 0.9f)
+        while (cor.a < 1f)
         {
             cor.a += Time.deltaTime;
             telaFim.color = cor;
