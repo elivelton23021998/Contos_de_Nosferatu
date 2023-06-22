@@ -23,5 +23,5 @@ email: contato@elivelton.dev
 
 ou acesse meu site e confira meus outros projetos:
 
-https://www.elivelton.info
+https://www.elivelton.dev
 
