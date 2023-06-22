@@ -2,7 +2,7 @@
  <img src="https://user-images.githubusercontent.com/63198288/244979702-0fcb911a-75e6-4938-886c-2c8f3707fe59.png" alt="Imagem do Jogo" width="100%">
 </p>
 
-![Badge Linguagem JavaScript](https://img.shields.io/badge/CSharp-323330?style=for-the-badge&logo=CSharp&logoColor=b440cf)
+![Badge Linguagem C#](https://img.shields.io/badge/CSharp-323330?style=for-the-badge&logo=CSharp&logoColor=b440cf)
 
 
 Jogo 3D em preto e branco e com efeitos sinematográficos simples feito como referência e homenagem ao centenário do filme Nosferatu de 1922
@@ -11,13 +11,13 @@ Jogo 3D em preto e branco e com efeitos sinematográficos simples feito como ref
 
 mais detalhes e download do projeto executável completo em:
 
-https://www.elivelton.info/contos-de-nosferatu
+https://www.elivelton.dev/contos-de-nosferatu
 
 
 
 <h1 align="left"> Contato do Criador: </h1>
 
-email: contato@elivelton.info
+email: contato@elivelton.dev
 
 +55 (11) 96274-8359
 
